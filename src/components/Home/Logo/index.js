@@ -1,12 +1,23 @@
 import './index.scss'
 import LogoA from '../../../assets/images/logo-A.png'
-import { useRef, useEffect } from 'react'
-/* import LogoAoutlined from '../../../assets/images/logoAOutlined.svg'
- */ import LogoAoutlined from '../../../assets/images/logoAnimation.svg'
+import { useRef, useEffect, useState } from 'react'
+/* import LogoAoutlined from '../../../assets/images/logoAOutlined.svg' */
+import LogoAoutlined from '../../../assets/images/logoAnimation.svg'
+import LogoAsolid from '../../../assets/images/logoAsolid.svg'
 import gsap from 'gsap-trial'
 
 const Logo = () => {
+  const [isHovering, setIsHovering] = useState(false)
+
   const outlineLogoRef = useRef()
+
+  const handleMouseOver = () => {
+    setIsHovering(true)
+  }
+
+  const handleMouseOut = () => {
+    setIsHovering(false)
+  }
 
   useEffect(() => {
     const timeline = gsap.timeline({
@@ -93,8 +104,10 @@ const Logo = () => {
           fill="none"
         > */}
         <image
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
           ref={outlineLogoRef}
-          xlinkHref={LogoAoutlined}
+          xlinkHref={isHovering ? LogoAsolid : LogoAoutlined}
           width="100%"
           height="100%"
           preserveAspectRatio="xMidYMid slice"

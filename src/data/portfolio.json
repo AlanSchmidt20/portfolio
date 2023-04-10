@@ -4,14 +4,14 @@
       "id": 1,
       "cover": "/portfolio/STA/STA.png",
       "title": "Schmidt Tennis Academy",
-      "description": "React, TypeScript, JSX",
+      "description": "React, TypeScript, JSX & CSS",
       "url": "https://schmidttenisacademy.vercel.app"
     },
     {
       "id": 2,
       "cover": "/portfolio/Sami/samiLogoBlanco.png",
       "title": "Sami Sosa",
-      "description": "React & JSX",
+      "description": "React, JSX, & CSS",
       "url": "https://thesamisosa.com"
     },
     {
@@ -27,6 +27,13 @@
       "title": "Weather Web App",
       "description": "React, JSX & REST API",
       "url": "https://weather-app-mocha-xi.vercel.app/"
+    },
+    {
+      "id": 5,
+      "cover": "/portfolio/Meme-generator/meme-generator.png",
+      "title": "Meme Generator",
+      "description": "React, JSX & REST API",
+      "url": "https://memegenerator.vercel.app/"
     }
   ]
 }

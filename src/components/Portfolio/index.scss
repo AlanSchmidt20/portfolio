@@ -13,7 +13,7 @@
 
   .images-container {
     display: flex !important;
-    gap: 15px;
+    gap: 30px;
     flex-wrap: wrap;
     padding-bottom: 100px;
   }
@@ -116,7 +116,7 @@
     width: 100%;
     padding: 10px;
     box-sizing: border-box; // to make sure we do not have horizontal scroll bar
-    padding-bottom: 20%;
+    padding-bottom: 21%;
 
     h1.page-title {
       margin-left: 20px;
@@ -132,7 +132,7 @@
 
     .image-box {
       height: 35vh;
-      max-width: calc(100% - 10px);
+      max-width: calc(105% - 10px);
 
       .content {
         padding: 10px 10px;

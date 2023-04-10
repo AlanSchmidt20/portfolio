@@ -5,6 +5,7 @@ import {
   faGithub,
   faDiscord,
 } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
   return (
@@ -44,6 +45,19 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={faDiscord}
+              color="#4d4d4e"
+              className="contact-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:alu.schmidt@hotmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faEnvelope}
               color="#4d4d4e"
               className="contact-icon"
             />

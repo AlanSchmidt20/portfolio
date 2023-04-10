@@ -7,7 +7,25 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
+
+  const [sending, setSending] = useState(false)
+
   const form = useRef()
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }))
+    console.log(formData)
+  }
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,7 +36,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault()
-
+    setSending(true)
     emailjs
       .sendForm(
         'service_4plv72d',
@@ -28,11 +46,19 @@ const Contact = () => {
       )
       .then(
         () => {
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+          })
           alert('Message successfully sent!')
           window.location.reload(false)
+          setSending(false)
         },
         () => {
           alert('Failed to send the message, please try again :)')
+          setSending(false)
         }
       )
   }
@@ -60,13 +86,22 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input
+                    placeholder="Name"
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
                     placeholder="Email"
                     type="email"
                     name="email"
+                    value={formData.email}
+                    onChange={handleChange}
                     required
                   />
                 </li>
@@ -75,6 +110,8 @@ const Contact = () => {
                     placeholder="Subject"
                     type="text"
                     name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
                     required
                   />
                 </li>
@@ -82,11 +119,17 @@ const Contact = () => {
                   <textarea
                     placeholder="Message"
                     name="message"
+                    value={formData.message}
+                    onChange={handleChange}
                     required
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input
+                    type="submit"
+                    className="flat-button"
+                    value={sending ? 'SENDING...' : 'SEND'}
+                  />
                 </li>
               </ul>
             </form>

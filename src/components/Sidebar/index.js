@@ -10,6 +10,7 @@ import {
   faSuitcase,
   faBars,
   faClose,
+  faAt,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
@@ -109,6 +110,19 @@ const Sidebar = () => {
           >
             <FontAwesomeIcon
               icon={faDiscord}
+              color="#4d4d4e"
+              className="contact-icon"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="mailto:alu.schmidt@hotmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faAt}
               color="#4d4d4e"
               className="contact-icon"
             />
