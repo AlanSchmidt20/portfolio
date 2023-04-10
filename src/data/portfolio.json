@@ -1,0 +1,32 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "cover": "/portfolio/STA/STA.png",
+      "title": "Schmidt Tennis Academy",
+      "description": "React, TypeScript, JSX",
+      "url": "https://schmidttenisacademy.vercel.app"
+    },
+    {
+      "id": 2,
+      "cover": "/portfolio/Sami/samiLogoBlanco.png",
+      "title": "Sami Sosa",
+      "description": "React & JSX",
+      "url": "https://thesamisosa.com"
+    },
+    {
+      "id": 3,
+      "cover": "/portfolio/Pokedex/Pokedex.png",
+      "title": "Pokedex",
+      "description": "React & JSX",
+      "url": "https://pokedex-silk-ten.vercel.app/"
+    },
+    {
+      "id": 4,
+      "cover": "/portfolio/Weather/Weather.png",
+      "title": "Weather Web App",
+      "description": "React & JSX",
+      "url": "https://weather-app-mocha-xi.vercel.app/"
+    }
+  ]
+}
