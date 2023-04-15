@@ -34,6 +34,13 @@
       "title": "Meme Generator",
       "description": "React, JSX & REST API",
       "url": "https://memegenerator.vercel.app/"
+    },
+    {
+      "id": 6,
+      "cover": "/portfolio/Password-generator/password-generator.png",
+      "title": "Password Generator",
+      "description": "JavaScript",
+      "url": "https://password-generator-ten-khaki.vercel.app/"
     }
   ]
 }
