@@ -41,6 +41,20 @@
       "title": "Password Generator",
       "description": "JavaScript",
       "url": "https://password-generator-ten-khaki.vercel.app/"
+    },
+    {
+      "id": 7,
+      "cover": "/portfolio/Calculator/Calculator.png",
+      "title": "Calculator",
+      "description": "JavaScript",
+      "url": "https://calculator-tau-taupe.vercel.app/"
+    },
+    {
+      "id": 8,
+      "cover": "/portfolio/Unit-Converter/Unit-Converter.png",
+      "title": "Unit Converter",
+      "description": "JavaScript",
+      "url": "https://unit-converter-beige-omega.vercel.app/"
     }
   ]
 }
