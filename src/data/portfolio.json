@@ -16,41 +16,48 @@
     },
     {
       "id": 3,
+      "cover": "/portfolio/ToDoList/ToDoList.png",
+      "title": "To Do List",
+      "description": "React, TypeScript & JSX",
+      "url": "https://taskify-list.vercel.app/"
+    },
+    {
+      "id": 4,
       "cover": "/portfolio/Pokedex/Pokedex.png",
       "title": "Pokedex",
       "description": "React, JSX & REST API",
       "url": "https://pokedex-mu-vert.vercel.app/"
     },
     {
-      "id": 4,
+      "id": 5,
       "cover": "/portfolio/Weather/Weather.png",
       "title": "Weather Web App",
       "description": "React, JSX & REST API",
       "url": "https://weather-app-mocha-xi.vercel.app/"
     },
     {
-      "id": 5,
+      "id": 6,
       "cover": "/portfolio/Meme-generator/meme-generator.png",
       "title": "Meme Generator",
       "description": "React, JSX & REST API",
       "url": "https://memegenerator.vercel.app/"
     },
     {
-      "id": 6,
+      "id": 7,
       "cover": "/portfolio/Password-generator/password-generator.png",
       "title": "Password Generator",
       "description": "JavaScript",
       "url": "https://password-generator-ten-khaki.vercel.app/"
     },
     {
-      "id": 7,
+      "id": 8,
       "cover": "/portfolio/Calculator/Calculator.png",
       "title": "Calculator",
       "description": "JavaScript",
       "url": "https://calculator-tau-taupe.vercel.app/"
     },
     {
-      "id": 8,
+      "id": 9,
       "cover": "/portfolio/Unit-Converter/Unit-Converter.png",
       "title": "Unit Converter",
       "description": "JavaScript",
