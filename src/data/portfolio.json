@@ -16,17 +16,17 @@
     },
     {
       "id": 3,
-      "cover": "/portfolio/Sami/samiLogoBlanco.png",
-      "title": "Sami Sosa",
-      "description": "React, JSX, & CSS",
-      "url": "https://thesamisosa.com"
-    },
-    {
-      "id": 4,
       "cover": "/portfolio/NoteApp/NoteApp.png",
       "title": "Note App",
       "description": "React, TypeScript, JSX & Bootstrap",
       "url": "https://notelistapp.vercel.app/"
+    },
+    {
+      "id": 4,
+      "cover": "/portfolio/ToDoList/ToDoList.png",
+      "title": "To Do List",
+      "description": "React, TypeScript & JSX",
+      "url": "https://taskify-list.vercel.app/"
     },
     {
       "id": 5,
